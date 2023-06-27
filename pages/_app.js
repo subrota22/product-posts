@@ -4,7 +4,7 @@ import Layout from '../Components/Layouts/Layouts'
 import '../styles/globals.css'
 import React from 'react'
 import Aos from 'aos';
-
+import 'react-photo-view/dist/react-photo-view.css';
 function MyApp({ Component, pageProps }) {
 //aos scroll animation
 React.useEffect(()=>{
@@ -21,9 +21,7 @@ Aos.init({
   </Head>
   <div id="mainDiv">
   <Layout>
-
    <Component {...pageProps} />
-  
   </Layout>
   </div>
   </>
