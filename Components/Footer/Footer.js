@@ -9,28 +9,28 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer>
-      <Box className="footer">
+      <Box id="footer">
         <Grid container my={6}>
           <Grid mx={10} my={2}> <Typography fontSize={"25px"} fontWeight={"bolder"}> &copy; Copy right by Subrota chandra sarker (2023) </Typography> </Grid>
           <Grid mx={10} my={2}>
             <Link href={'https://www.facebook.com/subrotachandra22/'} target='blank'>
-              <FacebookIcon className='footerIcon'> </FacebookIcon>
+              <FacebookIcon id='footerIcon'> </FacebookIcon>
             </Link>
 
             <Link href={'https://www.instagram.com/subrotachandra12/'} target='blank'>
-              <InstagramIcon className='footerIcon'> </InstagramIcon>
+              <InstagramIcon id='footerIcon'> </InstagramIcon>
             </Link>
 
             <Link href={'https://github.com/subrota22'} target='blank'>
-              <GitHubIcon className='footerIcon'> </GitHubIcon>
+              <GitHubIcon id='footerIcon'> </GitHubIcon>
             </Link>
 
             <Link href={'https://www.linkedin.com/in/subrota-chandra-sarker-full-stack-developer/'} target='blank'>
-              <LinkedInIcon className='footerIcon'> </LinkedInIcon>
+              <LinkedInIcon id='footerIcon'> </LinkedInIcon>
             </Link>
 
             <Link href={'https://twitter.com/Subrota21087778'} target='blank'>
-              <TwitterIcon className='footerIcon'> </TwitterIcon>
+              <TwitterIcon id='footerIcon'> </TwitterIcon>
             </Link>
           </Grid>
         </Grid>

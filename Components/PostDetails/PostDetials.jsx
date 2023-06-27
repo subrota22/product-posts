@@ -13,7 +13,7 @@ export default function PostDetails (props) {
   return (
    <React.Fragment>
     <Box ml={10} mb={12}>
-      <Card className='postCard' style={{ height: "auto", width: "70%", margin:"auto"}}>
+      <Card id='postCard' style={{ height: "auto", width: "70%", margin:"auto"}}>
         <CardMedia
           style={{ padding: "10px", transform:"scale(0.9)", marginTop:"10px" , borderRadius:"15px"}}
           component="img"

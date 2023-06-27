@@ -13,7 +13,7 @@ import CategoryIcon from '@mui/icons-material/Category';
 export default function Post(props) {
   const {  category, image, ratingRate, ratingCount, id , price} = props;
   return (
-    <Box ml={10} my={"30px"}>
+    <Box ml={10} my={"30px"} data-aos="zoom-in" data-aos-delay="300">
       <Card  id='postCard' style={{ height: "auto", width: "310px", textTransform:"uppercase" }}>
         <CardMedia
           style={{ padding: "10px", borderRadius:"22px" }}
@@ -23,14 +23,13 @@ export default function Post(props) {
           height={"240"}
         />
         <CardContent>
-        <Box display={"flex"} my={1} > <CategoryIcon style={{ color: "green", margin:"0 5px" }}></CategoryIcon> {category} </Box>
-
-          <Box display={"flex"} mt={1} > <LocalOfferIcon style={{ color: "green", margin:"0 5px" }}></LocalOfferIcon> ${price} </Box>
+        <Box display={"flex"} my={1} > <CategoryIcon style={{ color: "#26C6B5", margin:"0 5px" }}></CategoryIcon> {category} </Box>
+          <Box display={"flex"} mt={1} > <LocalOfferIcon style={{ color: "#26C6B5", margin:"0 5px" }}></LocalOfferIcon> ${price} </Box>
         </CardContent>
         <CardActions >
           <Box display={"flex"} mx={2} > <GradeIcon style={{ color: "yellow" }}></GradeIcon> {ratingRate} </Box>
-          <Box display={"flex"} mx={2}> <FeedbackIcon style={{ color: "green" }}> </FeedbackIcon> {ratingCount} </Box>
-          <Link href={`/pages/productDetails?id=${id}`}> <Button>Show more <ArrowForwardIcon></ArrowForwardIcon> </Button></Link>
+          <Box display={"flex"} mx={2}> <FeedbackIcon style={{ color: "#26C6B5",  margin:"0 3px" }}> </FeedbackIcon> {ratingCount} </Box>
+          <Link href={`/pages/productDetails?id=${id}`}> <Button style={{ color: "#26C6B5"}}>Show more <ArrowForwardIcon></ArrowForwardIcon> </Button></Link>
         </CardActions>
       </Card>
     </Box>
