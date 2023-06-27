@@ -1,13 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-html,
-body {
+
+#mainDiv{
+  background-color: #0F275A;
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  background-color: #0F275A;
   color: white;
 }
+
 body::-webkit-scrollbar{
   width: 14px;
   background-image:linear-gradient(to top, lime, rgb(143, 12, 97) , green) ;
@@ -18,14 +19,14 @@ body::-webkit-scrollbar-thumb{
   border-radius: 15px;
 }
 
-.postCard{
+#postCard{
   color: white;
   font-weight: bold;
   background-color: #0F275A;
   box-shadow:  0px 0px 4px 4px rgba(0, 0, 0, 0.3);
 
 }
-.postCard:hover{
+#postCard:hover{
   border-left: 5px solid rgba(0, 255, 0, 0.7);
   transform: scale(1.1);
   color: rgba(0, 255, 89, 0.83);
@@ -54,11 +55,11 @@ border-top: 3px solid rgb(183, 70, 115);
 }
 
 .contact_form{
-  background-color: #250653ce;
+  background-color: #081788;
   padding: 25px;
   border-radius: 8px;
   color: white;
-  margin: 40px 20px;
+  margin: 50px 20px;
 }
 
 .homeDiv{
@@ -73,3 +74,4 @@ border-top: 3px solid rgb(183, 70, 115);
  margin-left: 5%;
  box-shadow:  0 0 5px 5px;
 }
+

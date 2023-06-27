@@ -8,9 +8,13 @@ function MyApp({ Component, pageProps }) {
   <Head>
   <link rel="shortcut icon" href="https://i.ibb.co/LSD1zwg/product-logo.png" type="image/x-icon" />
   </Head>
+  <div id="mainDiv">
   <Layout>
-    <Component {...pageProps} />
+
+   <Component {...pageProps} />
+  
   </Layout>
+  </div>
   </>
 }
 

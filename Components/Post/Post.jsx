@@ -14,7 +14,7 @@ export default function Post(props) {
   const {  category, image, ratingRate, ratingCount, id , price} = props;
   return (
     <Box ml={10} my={"30px"}>
-      <Card className='postCard' style={{ height: "auto", width: "310px", textTransform:"uppercase" }}>
+      <Card  id='postCard' style={{ height: "auto", width: "310px", textTransform:"uppercase" }}>
         <CardMedia
           style={{ padding: "10px", borderRadius:"22px" }}
           component="img"

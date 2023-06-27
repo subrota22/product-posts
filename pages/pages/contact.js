@@ -6,7 +6,7 @@ const contact = () => {
     return (
         <>
             <Head><title>Contact page </title></Head>
-                <h2 style={{fontSize:"48px", fontWeight:"bolder", margin:"10px 14px", color:"green", textAlign:"center"}}> Contact us </h2>
+                <h2 style={{fontSize:"48px", fontWeight:"bolder", margin:"5px 14px", color:"white", textAlign:"center"}}> Contact us </h2>
                 <form action="https://formsubmit.co/itinfobd24@gmail.com" className='contact_form' method="post">
                     <TextField fullWidth label="Full name" id="Full name" name="full-name"  style={{margin:"8px 0px"}} required/>
                     <TextField fullWidth label="Email" id="Full name" name="email"  style={{margin:"8px 0px"}} required/>
