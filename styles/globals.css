@@ -1,26 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  background-color: #0F275A;
+  color: white;
+}
+body::-webkit-scrollbar{
+  width: 14px;
+  background-image:linear-gradient(to top, lime, rgb(143, 12, 97) , green) ;
+}
+body::-webkit-scrollbar-thumb{
+  width: 14px;
+  background-color: rgba(16, 5, 47, 0.7);
+  border-radius: 15px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.postCard{
+  color: white;
+  font-weight: bold;
+  background-color: #0F275A;
+  box-shadow:  0px 0px 4px 4px rgba(0, 0, 0, 0.3);
+
+}
+.postCard:hover{
+  border-left: 5px solid rgba(0, 255, 0, 0.7);
+  transform: scale(1.1);
+  color: rgba(0, 255, 89, 0.83);
+  transition: border-left 0.4s , transform 0.4s,  color 1s ;
 }
 
-* {
-  box-sizing: border-box;
+.footer{
+background-color: #062973;
+color: white;
+padding-top:10px;
+padding-bottom: 10px;
+border-top: 3px solid rgb(183, 70, 115);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.footerIcon{
+  margin:0px 5px;
+  color:#45fff2;
+  font-size:40px;
+}
+.footerIcon:hover{
+  box-shadow:  0 0 5px 5px;
+  border-radius: 22px;
+  padding: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.4s, border-radius 0.4s  ;
+}
+
+.contact_form{
+  background-color: #250653ce;
+  padding: 25px;
+  border-radius: 8px;
+  color: white;
+  margin: 40px 20px;
+}
+
+.homeDiv{
+  height: auto;
+  
+}
+
+.product-1, .product-2{
+ width: 90%;
+ height: 420px;
+ border-radius: 12px;
+ margin-left: 5%;
+ box-shadow:  0 0 5px 5px;
 }
