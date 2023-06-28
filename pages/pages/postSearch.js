@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 import Post from '../../Components/Post/Post';
 import Head from 'next/head';
 import { Input } from '@mui/joy';
+
 export async function getServerSideProps() {
     // Fetch data from the API
     const response = await fetch('https://fakestoreapi.com/products/');
@@ -16,7 +17,14 @@ export async function getServerSideProps() {
 
 function postSearch({ data }) {
     const [category, setCategory] = useState("");
-    const searchData = data.filter((item) => item.category == category);
+    let searchData = data.filter((item) => item?.category?.includes(category?.toLowerCase() || category?.toUpperCase()));
+    //condition for showing search data 
+    if (category !=="") {
+        searchData = searchData;
+    } else {
+        searchData = data;
+    }
+
     return (
         <>
             <Head><title>Post search</title></Head>
@@ -28,6 +36,12 @@ function postSearch({ data }) {
                     <h2 style={{ fontSize: "32px", textAlign: "center" }}> Total <span style={{ color: "green" }}>{searchData?.length}</span> posts found !!  </h2>
                 </>
             }
+                  {
+                searchData?.length === 0 && <>
+                    <h2 style={{ fontSize: "32px", textAlign: "center", color:"red", margin:"20px 10px" }}> Search data not found !!  </h2>
+                </>
+            }
+
             <Grid container mb={"25px"}>
                 {
                     searchData?.map(item => <Grid key={item?.id} >
@@ -37,7 +51,7 @@ function postSearch({ data }) {
                 }
             </Grid>
 
-<img src="https://i.ibb.co/jDQpvxk/jewelery.jpg" alt="jewelery" style={{height:"415px", width:"100%", marginBottom:"22px"}}/>
+            <img src="https://i.ibb.co/jDQpvxk/jewelery.jpg" alt="jewelery" style={{ height: "415px", width: "100%", marginBottom: "22px" }} />
         </>
     );
 }

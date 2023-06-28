@@ -57,11 +57,15 @@ border-top: 3px solid rgb(183, 70, 115);
 }
 
 .contact_form{
-  background-color: #081788;
+  background-color: #5f072e3d;
   padding: 25px;
   border-radius: 8px;
   color: white;
   margin: 50px 20px;
+}
+.contact_form:hover{
+  background-color: #f3ecef;
+  transition: background-color 1s;
 }
 
 .homeDiv{
